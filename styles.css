@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: #fefefe;
+  color: #000;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 20px 40px;
+  color: #fff;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Nav links */
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-link.active {
+  color: #fff;
+  text-shadow: 0 0 8px #ffffffaa;
+}
+
+/* Shop Now button */
+.shop-btn {
+  background: #e49744;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shop-btn:hover {
+  background: #e38b2d;
+}
+
+.cta {
+  background: #e49744;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.hero {
+  background: url("bgimg.jpg") center center / cover no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  min-height: 90vh;
+  position: relative;
+}
+
+/* Optional dark overlay for text contrast */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-text, .hero img {
+  position: relative;
+  z-index: 1;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  margin-bottom: 20px;
+  color: white;
+}
+.hero-buttons a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  margin: 0 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  position: relative;
+}
+
+.feature:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 1px;
+  height: calc(100% - 40px);
+  background: #ccc;
+}
+
+.feature-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.designs {
+  padding: 60px 50px;
+  background: #fefefe;
+}
+
+.designs h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  color: #777;
+  font-size: 16px;
+}
+.app-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: dimgray;
+  color: black;
+  padding: 60px 50px;
+}
+.app-section > div {
+  background: #e49744;
+  padding: 20px 15px; /* reduced side padding */
+  border-radius: 16px; /* curved edges */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  align-content: center;
+}
+.faq, .contact {
+  padding: 60px 50px;
+}
+.faq h2, .contact h2 {
+  margin-bottom: 20px;
+}
+.faq-item, .contact-item {
+  margin-bottom: 15px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  font-size: 14px;
+}

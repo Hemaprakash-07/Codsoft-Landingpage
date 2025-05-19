@@ -1,0 +1,121 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Wear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">StylishWear</div>
+  <nav class="main-nav">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="collection.html" class="nav-link">Collection</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <a href="shop.html" class="shop-btn">Shop Now</a>
+</header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Style That Defines You</h1>
+      <p>Discover the latest fashion trends and find your perfect outfit for every occasion.</p>
+      <div class="hero-buttons">
+        <a href="shop.html" class="cta">Shop Now</a>
+      </div>
+    </div>
+    <div>
+      <img src="hlogo.png" alt="Clothing" width="300">
+    </div>
+  </section>
+
+ <section class="features">
+  <div class="feature">
+    <img src="tlogo.jpg" alt="Trendy" class="feature-img">
+    <h4>Trendy Styles</h4>
+    <p>Stay ahead with our newest arrivals.</p>
+  </div>
+  <div class="feature">
+    <img src="mlogo.jpg" alt="Material" class="feature-img">
+    <h4>Quality Material</h4>
+    <p>Feel the difference in every piece.</p>
+  </div>
+  <div class="feature">
+    <img src="flogo.jpg" alt="Shipping" class="feature-img">
+    <h4>Fast Shipping</h4>
+    <p>Get your orders delivered swiftly.</p>
+  </div>
+  <div class="feature">
+    <img src="rlogo.jpg" alt="Returns" class="feature-img">
+    <h4>Easy Returns</h4>
+    <p>Shop risk-free with our return policy.</p>
+  </div>
+</section>
+
+  <section class="designs">
+  <h2>Best Sellers</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="casimg.jpg" alt="Casual T-Shirt">
+      <h4>Casual T-Shirt</h4>
+      <p>₹1,700</p>
+    </div>
+    <div class="card">
+      <img src="sumimg.jpg" alt="Summer Dress">
+      <h4>Summer Dress</h4>
+      <p>₹3,400</p>
+    </div>
+    <div class="card">
+      <img src="denimg.jpg" alt="Denim Jacket">
+      <h4>Denim Jacket</h4>
+      <p>₹4,200</p>
+    </div>
+  </div>
+</section>
+
+  <section class="app-section">
+    <div>
+      <h2>Shop On the Go</h2>
+      <p>Use our mobile app to get the latest updates and deals anywhere, anytime.</p>
+      <p>
+        <img src="applogo.png" alt="App Store" style="display: block; margin: 0 auto; width: 100px;">
+        <img src="goologo.jpg" alt="Google Play" style="display: block; margin: 0 auto; width: 100px;">
+      </p>
+    </div>
+    <div>
+      <img src="mylogo.jpg" alt="App UI" width="250">
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">How do I track my order?</div>
+    <div class="faq-item">What is your return policy?</div>
+    <div class="faq-item">Do you offer international shipping?</div>
+    <div class="faq-item">How can I contact support?</div>
+  </section>
+
+  <section class="contact">
+    <h2>Need Help?</h2>
+    <div class="contact-item">Chat with us</div>
+    <div class="contact-item">Email support</div>
+    <div class="contact-item">Join our community</div>
+  </section>
+
+  <footer>
+    &copy; StylishWear Inc. 2025
+  </footer>
+
+</body>
+</html>
+<script>
+  const links = document.querySelectorAll(".nav-link");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+</script>
